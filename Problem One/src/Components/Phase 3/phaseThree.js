@@ -10,7 +10,7 @@ const PhaseThree = () => {
     if (colorOne === "blue") {
       setColorOne("green");
     } else {
-      setColorTwo("blue");
+      setColorOne("blue");
     }
   };
 
