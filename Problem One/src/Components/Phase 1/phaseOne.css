@@ -9,10 +9,16 @@
 .htmlButton {
   margin-right: 0.5%;
   border: none;
+  font-weight: bolder;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
+  opacity: 0.8;
+}
+
+.htmlButton:hover {
+  cursor: pointer;
 }
