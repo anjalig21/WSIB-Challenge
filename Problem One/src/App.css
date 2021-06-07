@@ -1,3 +1,10 @@
 .App {
-  
+  height: 100vh;
+  padding: 5%;
+  background: linear-gradient(
+    42deg,
+    rgba(194, 146, 146, 0.839) 8%,
+    rgba(194, 121, 209, 0.809) 54%,
+    rgba(136, 233, 250, 0.811) 100%
+  );
 }
