@@ -44,14 +44,14 @@ function wsib(checkvariable) {
 }
 
 function qwertyuihgfd() {
-console.log("Type words until you wanna stop, then type exit!")
-prompt.start();
-prompt.get(["goose"], function (err, res) {
-  if (res.goose !== "exit") {
-    wsib(res.goose);
-    qwertyuihgfd();
-  }
-});
+  console.log("Type words until you wanna stop, then type exit!");
+  prompt.start();
+  prompt.get(["goose"], function (err, res) {
+    if (res.goose !== "exit") {
+      wsib(res.goose);
+      qwertyuihgfd();
+    }
+  });
 }
 
 qwertyuihgfd();
