@@ -45,7 +45,7 @@ var board = {
   9: " ",
 };
 
-function printBoard() {
+const printBoard = () => {
   count = 1;
   s = "";
   for (let i = 0; i < 3; i++) {
@@ -64,7 +64,7 @@ function printBoard() {
   }
 }
 
-function validMove(pos) {
+const validMove = (pos) => {
   if (board[`${pos}`] !== " " || pos > 9 || pos < 1) {
     return false;
   } else {
@@ -72,11 +72,11 @@ function validMove(pos) {
   }
 }
 
-function makeMove(pos, move) {
+const makeMove = (pos, move) => {
   board[pos] = move.toUpperCase();
 }
 
-function isWinner(player) {
+const isWinner = (player) => {
   for (let i = 0; i < winComb.length; i++) {
     let count = 0;
     for (let j = 0; j < winComb.length; j++) {
@@ -91,7 +91,7 @@ function isWinner(player) {
   return false;
 }
 
-function isTie() {
+const isTie = () => {
   for (let i = 0; i < Object.keys(board).length; i++) {
     if (board[i] === " ") {
       return false;
@@ -100,7 +100,7 @@ function isTie() {
   return true;
 }
 
-function playGame(player) {
+const playGame = (player) => {
   console.log(`It is ${player}'s turn!`);
   prompt.start();
   prompt.get(["pos"], function (err, res) {
@@ -129,7 +129,7 @@ function playGame(player) {
   });
 }
 
-function gameStarted() {
+const gameStarted = () => {
   console.log(
     "\n" +
       "The game has started!\n" +
@@ -142,7 +142,7 @@ function gameStarted() {
   );
 }
 
-function startGame() {
+const startGame = () => {
     gameStarted();
     playGame("X");
 }

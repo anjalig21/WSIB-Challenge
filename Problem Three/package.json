@@ -1,0 +1,14 @@
+{
+  "name": "problem-three",
+  "version": "1.0.0",
+  "description": "",
+  "main": "palindrome.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt": "^1.1.0"
+  }
+}
